@@ -9,7 +9,7 @@
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: var(--font-sans); background-color: var(--secondary); color: var(--text-dark); line-height: 1.6; scroll-behavior: smooth; }
+body { font-family: var(--font-sans); background-color: var(--secondary); color: var(--text-dark); line-height: 1.6; scroll-behavior: smooth;  margin-bottom: 80px; }
 
 .hero {
   background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
