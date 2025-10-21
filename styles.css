@@ -50,7 +50,7 @@ body { font-family: var(--font-sans); background-color: var(--secondary); color:
   align-items: center;
 }
 .detail-container img {
-  width: 100%; max-width: 1280px; max-height: 700px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  width: 100%; max-width: 700px; height: auto; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 .detail-content { max-width: 700px; text-align: center; margin-top: 20px; }
 .detail-content h1 { font-family: var(--font-serif); font-size: 2rem; margin-bottom: 15px; }
