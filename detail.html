@@ -1,144 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wijaya Tour — Bali Tour & Travel</title>
-  <meta name="description" content="Wijaya Tour - Paket wisata Bali: adventure, budaya, relaksasi, dan paket hemat.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Wisata - Wijaya Tour</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="brand">
-        <div class="logo">Wijaya Tour</div>
-        <div class="tagline">Explore Bali — Paket Wisata & Hemat</div>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#destinations">Destinasi</a></li>
-          <li><a href="#packages">Paket</a></li>
-          <li><a href="#about">Tentang</a></li>
-          <li><a href="#contact">Kontak</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <section class="hero">
-      <div class="bg"></div>
-      <div class="overlay"></div>
-      <div class="content">
-        <div class="kicker">It's time to</div>
-        <h1>Visit Bali — Temukan Petualangan & Kedamaian</h1>
-        <p class="lead">Wijaya Tour menyajikan paket wisata populer di Bali: petualangan, budaya, relaksasi, dan paket hemat.</p>
-        <a class="cta" href="#packages">Lihat Paket</a>
-      </div>
-    </section>
-
-    <section class="section" id="destinations">
-      <div class="title">Pilihan Wisata Populer</div>
-      <div class="tours" id="tours-list"></div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="about">
-        <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=1000&q=80" alt="Pura Bali">
-        <div>
-          <h2>A Place to Be</h2>
-          <p>Wijaya Tour membantu Anda merancang perjalanan ke Bali — dari pura bersejarah, sawah yang hijau, pantai tersembunyi, hingga petualangan air terjun.</p>
-          <a class="btn-primary" href="#packages">Lihat Paket Hemat</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="packages">
-      <div class="title">Paket & Harga</div>
-      <div class="pricing">
-        <div class="pkg">
-          <div class="pkg-header"><strong>Hemat 1 Hari</strong><div class="cost">Rp 250.000</div></div>
-          <p>Paket singkat untuk menikmati 1-2 destinasi populer.</p>
-          <ul><li>Pickup & drop</li><li>Transportasi</li><li>Pemandu</li></ul>
-          <a class="btn-primary" href="#contact">Pesan via WhatsApp</a>
-        </div>
-
-        <div class="pkg">
-          <div class="pkg-header"><strong>Petualangan 3 Hari</strong><div class="cost">Rp 850.000</div></div>
-          <p>Kombinasi trekking, air terjun, dan pengalaman budaya.</p>
-          <ul><li>3 hari paket penuh</li><li>Akomodasi sederhana</li><li>Guide berpengalaman</li></ul>
-          <a class="btn-primary" href="#contact">Pesan via WhatsApp</a>
-        </div>
-
-        <div class="pkg">
-          <div class="pkg-header"><strong>Paket Eksklusif</strong><div class="cost">Rp 2.450.000</div></div>
-          <p>Pengalaman premium — driver pribadi, villa pilihan, itinerary custom.</p>
-          <ul><li>Transport premium</li><li>Villa/Hotel bintang</li><li>Itinerary personal</li></ul>
-          <a class="btn-primary" href="#contact">Pesan via WhatsApp</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="contact">
-      <div class="title">Hubungi Tim Wijaya untuk Pemesanan</div>
-      <div class="contact-grid">
-        <div class="info">
-          <p>Untuk pemesanan cepat dan pertanyaan mengenai paket wisata, silakan hubungi tim kami melalui WhatsApp atau email berikut.</p>
-          <ul>
-            <li><strong>Alamat:</strong> Jl. Raya Kuta No.88, Bali</li>
-            <li><strong>Email:</strong> info@wijayatour.example</li>
-            <li><strong>Jam kerja:</strong> Setiap hari, 08:00 - 18:00 WITA</li>
-          </ul>
-        </div>
-        <div class="contacts">
-          <p><strong>Nomor WhatsApp Tim:</strong></p>
-          <ol id="contacts-list"></ol>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="footer-info">
-        <p><strong>Wijaya Tour</strong> — Partner perjalanan Anda menjelajahi keindahan Bali.</p>
-        <p>Alamat: Jl. Raya Kuta No.88, Badung, Bali | Email: info@wijayatour.example | Jam kerja: 08:00 - 18:00</p>
-      </div>
-      <small>© <span id="year"></span> Wijaya Tour — Semua Hak Dilindungi.</small>
-    </footer>
+  <div class="detail-container">
+    <img id="tourImage" alt="Gambar Wisata">
+    <div class="detail-content">
+      <h1 id="tourTitle"></h1>
+      <p id="tourDesc"></p>
+      <p id="tourPrice" class="price"></p>
+      <a id="waLink" class="btn-wa" target="_blank">Hubungi via WhatsApp</a>
+      <a href="index.html" class="btn-back">← Kembali ke Beranda</a>
+    </div>
   </div>
 
-  <div class="wa-fab">
-    <div class="wa-menu" id="wa-menu"></div>
-    <button class="wa-btn" id="wa-toggle">Hubungi Kami</button>
-  </div>
+  <footer>
+    <p>© 2025 Wijaya Tour. Semua Hak Dilindungi.</p>
+  </footer>
 
   <script src="data.js"></script>
-  <script>
-    const toursList = document.getElementById('tours-list');
-    TOURS_DATA.forEach(t => {
-      const card = document.createElement('article');
-      card.className='card';
-      card.innerHTML = `
-        <img src="${t.img}" alt="${t.title}">
-        <div class="body">
-          <h3>${t.title}</h3>
-          <div class="price">${t.price}</div>
-          <div class="tags">${t.tags.map(tag=>`<span class='tag'>${tag}</span>`).join('')}</div>
-          <a class="btn-primary" href="https://wa.me/${CONTACTS[0].phone.replace(/\D/g,'')}?text=${encodeURIComponent('Halo, saya mau pesan paket: '+t.title)}" target="_blank">Pesan via WhatsApp</a>
-        </div>`;
-      toursList.appendChild(card);
-    });
-
-    const contactsList = document.getElementById('contacts-list');
-    CONTACTS.forEach(c=>{
-      const li=document.createElement('li');
-      li.innerHTML = `<strong>${c.name}</strong> — <a href='https://wa.me/${c.phone.replace(/\D/g,'')}' target='_blank'>${c.phone}</a>`;
-      contactsList.appendChild(li);
-    });
-
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    const waToggle=document.getElementById('wa-toggle');
-    const waMenu=document.getElementById('wa-menu');
-    waToggle.addEventListener('click',()=>waMenu.classList.toggle('open'));
-  </script>
 </body>
 </html>
